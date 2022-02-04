@@ -1,0 +1,43 @@
+$social-size: 38px;
+
+.socials {
+  @include flexbox();
+  @include align-items(center);
+
+  a:link,
+  a:visited {
+    width: $social-size;
+    height: $social-size;
+    border-radius: $social-size;
+    text-decoration: none;
+    transition: all .3s linear;
+    margin-right: 2px;
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+    background: transparent;
+    border: 2px solid $color-pink;
+
+    span {
+      color: $color-pink;
+      font-size: 21px;
+      transition: all .3s linear;
+    }
+
+    /*&.vk { background: #4a76a8; }
+    &.facebook { background: #4267b2; }
+    &.twitter { background: #1da1f2; }
+    &.odnoklassniki { background: #ee8208; }
+    &.skype { background: #00aff0; }
+    &.whatsapp { background: #37b726; }
+    &.viber { background: #7b519c; }
+    &.telegram { background: #2399d7; }*/
+  }
+  a:hover {
+    background: $color-pink;
+
+    span {
+      color: #fff;
+    }
+  }
+}

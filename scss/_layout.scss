@@ -1,0 +1,179 @@
+* {
+  @include box-sizing(border-box);
+}
+
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  background: #fff;
+}
+
+body {
+  margin: 0 auto;
+  color: $color-gray;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  position: relative;
+  height: 100%;
+}
+
+body.index_page {
+
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+
+  @media screen and (max-width: 1099px) {
+    width: 100%;
+  }
+
+  @media #{$tablet} {
+    width: 100%;
+  }
+}
+
+
+// Headings
+//
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  line-height: 1em;
+  margin: 0 0 30px 0;
+  padding: 0;
+  font-weight: bold;
+  color: #3a3a3a;
+}
+
+h1, .h1 {
+  font-size: 36px;
+  line-height: 1em;
+  color: #3a3a3a;
+  text-transform: none;
+  margin-top: 30px;
+
+  @media #{$tablet} {
+    font-size: 30px;
+  }
+}
+
+h2, .h2 {
+  font-size: 30px;
+}
+
+h3, .h3 {
+
+}
+
+h4, .h4 {
+
+}
+
+h5, .h5 {
+
+}
+
+h6, .h6 {
+
+}
+
+
+// Links
+.visual-hidden {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+#menu__toggle {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+a {
+  outline: none;
+  color: $link-color;
+  text-decoration: $link-decoration;
+  -webkit-text-decoration-skip: objects;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    text-decoration: $link-hover-decoration;
+  }
+}
+
+.full_width {
+  width: 100vw;
+  margin-left: calc((100vw - 1200px) / 2 * -1);
+
+  @media #{$tablet} {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.only_mobile,
+.mobile_only {
+  display: none;
+
+  @media #{$tablet} {
+    display: block;
+  }
+}
+
+.clearfix {
+  clear: both;
+}
+
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+  border: 1px solid #d3d3d3;
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 3px;
+  padding: 0 15px;
+  line-height: 36px;
+  height: 36px;
+  font-size: 18px;
+  font-family: $font-family-base;
+  color: #000;
+  outline: none;
+  @include transition(all .3s linear);
+
+  &.input_error {
+    border-color: #f00;
+  }
+
+  &:focus {
+    border-color: $color-green;
+  }
+}
+
+.wrapper {
+ overflow-y: hidden;
+}
+
+textarea {
+  padding: 10px 15px;
+  line-height: 1.2em;
+}
+
+.starrequired {
+  color: #f00;
+}
+
+
+.privancy_text {
+  margin-bottom: 20px;
+  font-size: .8em;
+}

@@ -1,0 +1,199 @@
+.technics {
+  margin-top: 75px;
+  height: 1140px;
+  background-position: 75% 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: relative;
+
+  h2 {
+    width: 50%;
+    text-align: right;
+    font-size: 72px;
+    color: #ebac28;
+    text-transform: uppercase;
+    font-family: "Panton", sans-serif;
+    font-weight: 900;
+    position: relative;
+    z-index: 10;
+    text-shadow: 0px 4px 38px rgba(0, 0, 0, 0.9);
+  }
+  &__slider--bg:before{
+    content: "";
+    display: block;
+    background: url(../images/tech/tech-before.png) no-repeat right top;
+    background-size: cover;
+    width: 1057px;
+    height: 1034px;
+    position: absolute;
+    left: -75px;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  &__container {
+    width: 100%;
+    padding: 100px 40px 0 40px;
+    box-sizing: border-box;
+
+  }
+
+  &__slider {
+    width: 50%;
+    margin-left: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__slide {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .slide-title {
+    transform: translateY(80px);
+    font-size: 48px;
+    color: black;
+    text-transform: uppercase;
+    font-family: "Panton", sans-serif;
+    font-weight: 900;
+    position: relative;
+    z-index: 10;
+    margin-left: -35%;
+  }
+  .slide-text-price {
+    display: none;
+  }
+  .slide-text {
+    font-family: "Gilroy", sans-serif;
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+    width: 68%;
+    text-align: center;
+    margin-top: 3em;
+  }
+  &__pagenation {
+    position: absolute;
+    left: 46%;
+    bottom: 180px;
+    text-align: center;
+    z-index: 10;
+
+    &_num {
+      font-family: $font-family-second;
+      font-size: 300px;
+      color: #000;
+      pointer-events: none;
+      font-weight: 900;
+      opacity: 0.12;
+      line-height: .8em;
+    }
+
+    .swiper-pagination {
+      position: relative;
+      z-index: 10;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    height: 19px;
+    width: 19px;
+    background-color: #7a7a7a;
+
+    &.swiper-pagination-bullet-active {
+      background-color: $color-orange;
+    }
+  }
+  .btn {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+}
+
+@media (max-width: 999px) {
+  .technics {
+    height: 675px;
+    margin-top: -3em;
+    background-size: cover;
+
+    h2 {
+      font-size: 48px;
+      width: 100%;
+      text-align: left;
+      top: 10px;
+    }
+
+    &__container {
+      padding: 15px;
+    }
+    &__slider {
+      width: 100%;
+
+      &--bg {
+        position: relative;
+        overflow: hidden;
+        margin: 0 -15px;
+      }
+    }
+    &__slide {
+      margin-top: 2em;
+    }
+    img {
+      max-width: 100%;
+    }
+    .slide-img {
+      width: 75%;
+      position: relative;
+      top: 60px;
+    }
+    .slide-title {
+      font-size: 21px;
+      margin-left: -48%;
+      text-align: left;
+      transform: translateY(105px);
+    }
+    .slide-text-price {
+      display: block;
+      color: black;
+      font-weight: 500;
+      text-align: center;
+      margin-top: 15px;
+      padding: 0 15px;
+    }
+    .slide-text {
+      width: 100%;
+      font-size: 16px;
+      text-align: left;
+      margin-top: 5em;
+      padding: 0 15px;
+    }
+    .index_slider__order {
+      margin-top: -15px;
+    }
+    &__slider--bg:before{
+      content: "";
+      display: block;
+      background: url(../images/tech/tech-before--mobile.png) no-repeat center center;
+      background-size: cover;
+      width: 100%;
+      height: 110%;
+      position: absolute;
+      left: 0;
+      bottom: -10%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    &__pagenation {
+      left: 39%;
+      bottom: 218px;
+    }
+  }
+}
+@media (min-width: 700px) {
+  .technics {
+    background: url(../images/tech/tech-bg.jpg) no-repeat top center !important;
+  }
+}

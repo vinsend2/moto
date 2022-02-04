@@ -1,0 +1,198 @@
+.gallery {
+  height: 973px;
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  margin-top: -1em;
+
+  &__title__mobile {
+    display: none;
+  }
+  &__container {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+  }
+  &__slider {
+    width: 100%;
+    margin-top: 4em;
+  }
+  &__text-block {
+    width: 60%;
+    position: relative;
+    &:before {
+      content: "";
+      display: block;
+      background: url(../images/gallery/gallery-before.png) no-repeat right top;
+      background-size: cover;
+      width: 820px;
+      height: 829px;
+      position: absolute;
+      left: 15px;
+      top: -125px;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .block {
+      color: white;
+      font-family: $font-family-second;
+      font-size: 22px;
+      max-width: 500px;
+      margin-left: 7em;
+      position: relative;
+      z-index: 30;
+      strong {
+        font-family: $font-family-second;
+        font-size: 24px;
+        color: $color-orange;
+        font-weight: 700;
+      }
+      span {
+        color: $color-orange;
+        font-size: 36px;
+        font-weight: 900;
+        text-transform: uppercase;
+        i {
+          color:white;
+        }
+      }
+    }
+  }
+  &__slide {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 22px;
+    &__overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      z-index: 0;
+      background-color: rgba(18,19,20,.36);
+      transition: all 0.25s cubic-bezier(.455,.03,.515,.955);
+      -webkit-transition: all 0.25s cubic-bezier(.455,.03,.515,.955);
+    }
+
+  }
+  .slide-img {
+    position: relative;
+    z-index: 5;
+    &:hover .gallery__slide__overlay {
+      background-color: rgba(18,19,20,.0);
+
+    }
+  }
+  .slide-img:last-of-type {
+    margin-top: -17.65em;
+  }
+  &__pagenation {
+    position: absolute;
+    right: 30%;
+    bottom: -50px;
+    text-align: center;
+    z-index: 10;
+
+    &_num {
+      font-family: $font-family-second;
+      font-size: 300px;
+      color: #000;
+      pointer-events: none;
+      font-weight: 900;
+      opacity: 0.12;
+      line-height: .8em;
+    }
+
+    .swiper-pagination {
+      position: relative;
+      z-index: 10;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    height: 19px;
+    width: 19px;
+    background-color: #7a7a7a;
+
+    &.swiper-pagination-bullet-active {
+      background-color: $color-orange;
+    }
+  }
+}
+@media (max-width: 999px) {
+  .gallery {
+    height: 675px;
+    background-size: cover;
+    &__title__mobile {
+      display: block;
+      position: absolute;
+      text-align: center;
+      font-size: 24px;
+      color: white;
+      left: 50%;
+      transform: translateX(-50%);
+      span {
+        font-size: 36px;
+        color: $color-orange;
+        font-family: "Panton", sans-serif;
+        font-weight: 900;
+        text-transform: uppercase;
+        span {
+          color: white;
+        }
+      }
+    }
+    img {
+      max-width: 100%;
+    }
+    &__container {
+      padding: 15px;
+      margin-top: 15px;
+    }
+    &__slide__overlay {
+      display: none;
+    }
+    &__text-block {
+      display: none;
+    }
+    &__slide {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-column-gap: 10px;
+      grid-row-gap: 6px;
+    }
+    .slide-img:nth-of-type(1) {
+      grid-area: 1 / 1 / 2 / 3;
+    }
+    .slide-img:nth-of-type(2) {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+    .slide-img:nth-of-type(3) {
+      grid-area: 3 / 1 / 4 / 2;
+      position: relative;
+      top: -50%;
+    }
+    .slide-img:nth-of-type(4) {
+      display: none;
+    }
+    .slide-img:last-of-type {
+      margin-top: 0;
+      grid-area: 2 / 2 / 4 / 3;
+    }
+    &__pagenation {
+      position: absolute;
+      right: 40%;
+      bottom: 14em;
+      text-align: left;
+      z-index: 10;
+        }
+  }
+}
+
+@media (min-width: 700px) {
+  .gallery {
+    background: url(../images/gallery/gallery-bg.jpg) no-repeat top center !important;
+  }
+}

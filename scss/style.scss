@@ -1,0 +1,29 @@
+@import "variables";
+
+// Mixins
+@import "mixins/gradients";
+@import "mixins/vendor-prefixes";
+@import "mixins/clearfix";
+@import "mixins/flex";
+
+@import "mixins/grid-mixins";
+@import "mixins/visibility-mixins";
+
+@import "fonts/gilroy";
+@import "fonts/panton";
+
+
+@import "components/header";
+@import "components/index_slider";
+@import "components/btn";
+@import "components/routes";
+@import "components/ _technics";
+@import "components/_stuff";
+@import "components/_gallery";
+@import "components/_reserve";
+@import "components/_price";
+@import "components/_footer";
+@import "layout";
+//@import "components/socials";
+
+

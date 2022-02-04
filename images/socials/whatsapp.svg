@@ -1,0 +1,61 @@
+<svg id="whatsapp" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33.156" height="32.12" viewBox="0 0 33.156 32.12">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: #86ac5d;
+        fill-opacity: 0;
+        stroke: #ebebeb;
+        stroke-linejoin: round;
+        stroke-opacity: 0.48;
+        stroke-width: 2px;
+        filter: url(#filter);
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+    <filter id="filter" x="329.594" y="4683.66" width="31.156" height="30.12" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#13150b" flood-opacity="0.4"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="translate(-328.594 -4682.66)" style="fill: #86ac5d; filter: url(#filter)">
+    <path id="Прямоугольник_скругл._углы_3_copy_4" data-name="Прямоугольник, скругл. углы 3 copy 4" class="cls-1" d="M344.929,4683.67h0.5a15.09,15.09,0,0,1,15.333,14.84v0.42a15.1,15.1,0,0,1-15.333,14.85h-0.5a15.1,15.1,0,0,1-15.333-14.85v-0.42A15.09,15.09,0,0,1,344.929,4683.67Z" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use transform="translate(-328.594 -4682.66)" xlink:href="#Прямоугольник_скругл._углы_3_copy_4" style="stroke: #ebebeb; filter: none; fill: none"/>
+  <path id="Forma_1" data-name="Forma 1" class="cls-2" d="M354.8,4697.63a9.112,9.112,0,0,1-9.2,9.03,9.352,9.352,0,0,1-4.445-1.12l-5.091,1.6,1.659-4.85a8.856,8.856,0,0,1-1.319-4.66A9.2,9.2,0,0,1,354.8,4697.63Zm-9.2-7.58a7.667,7.667,0,0,0-7.732,7.59,7.431,7.431,0,0,0,1.473,4.44l-0.965,2.82,2.97-.93a7.813,7.813,0,0,0,4.254,1.25A7.586,7.586,0,1,0,345.6,4690.05Zm4.645,9.66a1.334,1.334,0,0,0-.433-0.26c-0.225-.11-1.334-0.64-1.539-0.71a0.346,0.346,0,0,0-.509.11,10.936,10.936,0,0,1-.713.86,0.348,0.348,0,0,1-.488.06,6.033,6.033,0,0,1-1.814-1.1,6.571,6.571,0,0,1-1.254-1.53,0.318,0.318,0,0,1,.1-0.45c0.1-.1.225-0.26,0.338-0.39a1.466,1.466,0,0,0,.225-0.37,0.391,0.391,0,0,0-.019-0.38c-0.056-.12-0.506-1.2-0.7-1.65s-0.375-.36-0.507-0.36-0.281-.02-0.432-0.02a0.83,0.83,0,0,0-.6.27,2.493,2.493,0,0,0-.788,1.85,4.273,4.273,0,0,0,.919,2.29,9.281,9.281,0,0,0,3.852,3.34c2.293,0.88,2.293.59,2.706,0.55a2.307,2.307,0,0,0,1.521-1.05A1.849,1.849,0,0,0,350.243,4699.71Z" transform="translate(-328.594 -4682.66)"/>
+</svg>

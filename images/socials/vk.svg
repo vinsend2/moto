@@ -1,0 +1,67 @@
+<svg id="Вк_1" data-name="Вк 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33.156" height="32.09" viewBox="0 0 33.156 32.09">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: #64759b;
+        fill-opacity: 0;
+        stroke: #ebebeb;
+        stroke-linejoin: round;
+        stroke-opacity: 0.48;
+        stroke-width: 2px;
+        filter: url(#filter);
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        filter: url(#filter-2);
+      }
+    </style>
+    <filter id="filter" x="221.25" y="4683.88" width="31.156" height="30.09" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#13150b" flood-opacity="0.4"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="226.906" y="4693.56" width="19.094" height="10.63" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="translate(-220.25 -4682.88)" style="fill: #64759b; filter: url(#filter)">
+    <path id="Прямоугольник_скругл._углы_3" data-name="Прямоугольник, скругл. углы 3" class="cls-1" d="M236.572,4683.87h0.5a15.1,15.1,0,0,1,15.332,14.85v0.42a15.089,15.089,0,0,1-15.332,14.84h-0.5a15.089,15.089,0,0,1-15.332-14.84v-0.42A15.1,15.1,0,0,1,236.572,4683.87Z" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use transform="translate(-220.25 -4682.88)" xlink:href="#Прямоугольник_скругл._углы_3" style="stroke: #ebebeb; filter: none; fill: none"/>
+  <path id="Фигура_1" data-name="Фигура 1" class="cls-2" d="M236.247,4704.14h1.142a1.013,1.013,0,0,0,.521-0.22,0.8,0.8,0,0,0,.157-0.49s-0.022-1.5.689-1.72,1.6,1.45,2.555,2.09a1.832,1.832,0,0,0,1.27.37l2.551-.03s1.335-.08.7-1.11a8.48,8.48,0,0,0-1.9-2.13c-1.6-1.45-1.386-1.22.541-3.72,1.174-1.52,1.643-2.45,1.5-2.85a1.131,1.131,0,0,0-1-.28l-2.873.02a0.669,0.669,0,0,0-.371.06,0.785,0.785,0,0,0-.253.3,15.922,15.922,0,0,1-1.061,2.18c-1.279,2.12-1.791,2.23-2,2.1-0.486-.31-0.365-1.23-0.365-1.89,0-2.05.319-2.9-.622-3.12a4.835,4.835,0,0,0-1.34-.13,6.232,6.232,0,0,0-2.384.24c-0.326.15-.579,0.5-0.425,0.52a1.282,1.282,0,0,1,.848.41,2.657,2.657,0,0,1,.284,1.27s0.169,2.41-.4,2.71c-0.387.21-.919-0.21-2.059-2.13a17.381,17.381,0,0,1-1.025-2.07,0.841,0.841,0,0,0-.237-0.31,1.322,1.322,0,0,0-.441-0.18l-2.73.02a0.92,0.92,0,0,0-.56.19,0.558,0.558,0,0,0-.011.47s2.137,4.87,4.557,7.32A6.679,6.679,0,0,0,236.247,4704.14Z" transform="translate(-220.25 -4682.88)"/>
+</svg>

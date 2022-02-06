@@ -75,11 +75,36 @@ const revealInit = () => {
   }
 }
 
+const modalInit = () => {
+
+  $('.show-modal').on('click', function() {
+    $('.modal').toggleClass('modal__show');
+    $('body').toggleClass('no-scroll');
+    event.preventDefault()
+  });
+  $('.modal__btn-close').on('click', function() {
+    $('.modal').toggleClass('modal__show');
+    $('body').toggleClass('no-scroll');
+  });
+  $('.modal__backdrop').on('click', function() {
+    if (event.target.dataset.dismiss === 'modal') {
+      $('.modal').toggleClass('modal__show');
+      $('body').toggleClass('no-scroll');
+    }
+  });
+
+
+}
+
+
+
+
 document.addEventListener(
     "DOMContentLoaded",
     function () {
       burgerToogle();
       revealInit();
+      modalInit();
     },
     false
 );

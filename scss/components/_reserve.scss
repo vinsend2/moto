@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-size: auto;
   position: relative;
-  margin-top: -1em;
+/*  margin-top: -1em;*/
 
   &__container {
     display: flex;
@@ -185,6 +185,6 @@
 
 @media (min-width: 700px) {
   .reserve {
-    background: url(../images/reserve/reserve-bg.jpg) no-repeat top center !important;
+    background: url(../images/reserve/reserve-bg.jpg) no-repeat top center/cover !important;
   }
 }

@@ -27,6 +27,7 @@ $(document).ready(function (){
   });
 
   const gallerySlides = new Swiper('.gallery__container > .swiper', {
+    spaceBetween: 400,
     // If we need pagination
     pagination: {
       el: '.gallery__pagenation .swiper-pagination',
@@ -47,7 +48,7 @@ $(document).ready(function (){
       clickable: true,
     },
     breakpoints: {
-      576: {
+      999: {
         slidesPerView: 3
       }
     }
@@ -60,40 +61,56 @@ $(document).ready(function (){
 
 });
 
-const catalogToogle = () => {
-
+const burgerToogle = () => {
+  $('.menu__btn').on('click', function() {
+    $('body').toggleClass('no-scroll');
+  });
 }
+const revealInit = () => {
+  if ($(window).width() > 999) {
+    ScrollReveal().reveal('.index_slider__text .text-1');
+    ScrollReveal().reveal('.index_slider__text .text-2');
+    ScrollReveal().reveal('.index_slider__text .text-3', {delay: 500});
+    ScrollReveal().reveal('.index_slider__text .text-4', {delay: 2000})
+  }
+}
+
 document.addEventListener(
     "DOMContentLoaded",
     function () {
-      catalogToogle();
+      burgerToogle();
+      revealInit();
     },
     false
 );
 
-/*
 $(function () { // wait for document ready
   // init
+
   var controller = new ScrollMagic.Controller();
 
   // define movement of panels
   var wipeAnimation = new TimelineMax()
-      .fromTo("section.panel.routes", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
-      .fromTo("section.panel.technics",    1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
-      .fromTo("section.panel.stuff", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone}) // in from top
-      .fromTo("section.panel.gallery", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
-      .fromTo("section.panel.reserve",    1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
-      .fromTo("section.panel.price", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
+  var tl = new TimelineMax();
+/*  tl.from("section.panel.routes", 1, {xPercent: 100});*/
+  tl.from("section.panel.technics", 1, {xPercent: 100});
+  tl.from("section.panel.stuff", 1, {xPercent: -100});
+  tl.from("section.panel.gallery", 1, {xPercent: 100});
+  tl.from("section.panel.reserve", 1, {xPercent: -100});
+  /*  tl.from("section.panel.price", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone}); // in from top*!/*/
 
 
   // create scene to pin and link animation
   new ScrollMagic.Scene({
-    triggerElement: "#pinContainer",
+    triggerElement: "#pinMaster",
     triggerHook: "onLeave",
-    duration: "300%"
+    duration: "250%"
   })
-      .setPin("#pinContainer")
-      .setTween(wipeAnimation)
-      .addIndicators() // add indicators (requires plugin)
+      .setPin("#pinMaster")
+      .setTween(tl)
       .addTo(controller);
-});*/
+
+});
+
+
+

@@ -4,7 +4,7 @@
   background-position: 75% 100%;
   background-repeat: no-repeat;
   background-size: auto;
- margin-top: -8em;
+/* margin-top: -8em;*/
   position: relative;
 
   h2 {
@@ -26,6 +26,7 @@
   }
   &__slider {
     margin-left: -5em !important;
+    max-width: 1095px;
     .swiper-wrapper {
       padding-top: 150px;
     }
@@ -40,7 +41,10 @@
   }
 
   &-img--chel {
-
+    width: 30%;
+    img {
+      margin-left: -6em;
+    }
   }
 
   .slide-img {
@@ -62,6 +66,9 @@
 
   &__slide {
     display: flex;
+    img {
+      max-width: 100%;
+    }
   }
   .slide__text-block {
     width: 30%;
@@ -205,7 +212,8 @@
     &__slider {
       width: 100%;
       right: 0;
-      top: -175px;
+      top: 0;
+      max-width: none;
       margin-left: 0 !important;
       img {
         display: none;
@@ -252,8 +260,8 @@
         display: block;
         background: url(../images/stuff/bg-before--mobile.png) no-repeat right top;
         background-size: cover;
-        width: 256px;
-        height: 256px;
+        width: 61vw;
+        height: 30vh;
         position: absolute;
         left: -18px;
         top: -18px;
@@ -275,9 +283,10 @@
       z-index: 20;
       //transform: translateX(-16em);
       img {
-        max-height: 100%;
+        max-height: 793px;
         position: absolute;
-        left: -250px;
+        left: -334px;
+        margin-left: 0;
       }
     }
     .slide-title {
@@ -298,9 +307,32 @@
     }
   }
 }
+@media (min-width: 1000px) and (max-width: 1500px) {
+  .stuff {
+    .slide-text {
+      transform: translateX(-57px);
+      display: block;
+    }
+    .slide-title {
+      transform: translateX(-95px);
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 999px) {
+  .stuff {
+   &-img--chel {
+     img {
+       max-height: 1000px;
+       position: absolute;
+       left: -398px;
+       margin-left: 0;
+     }
+   }
+  }
+}
 
 @media (min-width: 700px) {
   .stuff {
-    background: url(../images/stuff/stuff-bg.jpg) no-repeat top center !important;
+    background: url(../images/stuff/stuff-bg.jpg) no-repeat top center/cover !important;
   }
 }

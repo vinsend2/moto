@@ -83,8 +83,8 @@ const modalInit = () => {
     event.preventDefault()
   });
   $('.modal__btn-close').on('click', function() {
-    $('.modal').toggleClass('modal__show');
-    $('body').toggleClass('no-scroll');
+    $('.modal').addClass('modal__show');
+    $('body').addClass('no-scroll');
   });
   $('.modal__backdrop').on('click', function() {
     if (event.target.dataset.dismiss === 'modal') {
@@ -129,7 +129,7 @@ $(function () { // wait for document ready
   new ScrollMagic.Scene({
     triggerElement: "#pinMaster",
     triggerHook: "onLeave",
-    duration: "250%"
+    duration: "350%"
   })
       .setPin("#pinMaster")
       .setTween(tl)

@@ -129,7 +129,7 @@ $(function () { // wait for document ready
   new ScrollMagic.Scene({
     triggerElement: "#pinMaster",
     triggerHook: "onLeave",
-    duration: "350%"
+    duration: "450%"
   })
       .setPin("#pinMaster")
       .setTween(tl)

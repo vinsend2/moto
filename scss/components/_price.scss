@@ -4,8 +4,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+
 /*  margin-top: -2em;*/
-  padding-top: 55px;
+
   margin-bottom: -130px;
   h2 {
     width: 100%;
@@ -24,6 +25,10 @@
   }
   &__slider {
     padding-top: 2em !important;
+    height: 75vh;
+  }
+  .swiper-wrapper {
+    position: absolute !important;
   }
   &__slide {
     display: flex;
@@ -106,7 +111,7 @@
   &__pagenation {
     position: absolute;
     right: 50%;
-    bottom: 9em;
+    bottom: 8.5em;
     text-align: center;
     z-index: 10;
     transform: translateX(45%);
@@ -128,12 +133,17 @@
   }
 
   .swiper-pagination-bullet {
-    height: 19px;
-    width: 19px;
+    height: 14px;
+    width: 14px;
     background-color: #7a7a7a;
 
     &.swiper-pagination-bullet-active {
-      background-color: $color-orange;
+      background-color: transparent;
+      border: 3px solid #ebac28;
+      height: 16px;
+      width: 16px;
+      position: relative;
+      top: 1px;
     }
   }
 }

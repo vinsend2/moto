@@ -1,6 +1,6 @@
 .technics {
   /*margin-top: 75px;*/
-  min-height: 1140px;
+  min-height: 1040px;
   background-position: 75% 100%;
   background-repeat: no-repeat;
   background-size: auto;
@@ -34,8 +34,9 @@
 
   &__container {
     width: 100%;
-    padding: 100px 40px 0 40px;
+    /*padding: 100px 40px 0 40px;*/
     box-sizing: border-box;
+    margin-top: -5em;
 
   }
 
@@ -99,12 +100,17 @@
   }
 
   .swiper-pagination-bullet {
-    height: 19px;
-    width: 19px;
+    height: 14px;
+    width: 14px;
     background-color: #7a7a7a;
 
     &.swiper-pagination-bullet-active {
-      background-color: $color-orange;
+      background-color: transparent;
+      border: 3px solid #ebac28;
+      height: 16px;
+      width: 16px;
+      position: relative;
+      top: 1px;
     }
   }
   .btn {
@@ -128,6 +134,7 @@
 
     &__container {
       padding: 15px;
+      margin: 0;
     }
     &__slider {
       width: 100%;
@@ -196,3 +203,4 @@
     background: url(../images/tech/tech-bg.jpg) no-repeat top center/cover !important;
   }
 }
+

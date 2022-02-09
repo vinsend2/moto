@@ -8,8 +8,10 @@
   }
 }
 .header {
-  position: relative;
-  z-index: 10;
+  position: absolute;
+  z-index: 13;
+  width: 100%;
+  transition: all 0.5s ease-out;
 
   &:before {
     content: '';
@@ -17,7 +19,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    height: 360px;
+    height: 170px;
     position: absolute;
     z-index: -1;
     pointer-events: none;
@@ -311,5 +313,13 @@
     &__order {
       margin-left: 10px;
     }
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1600px) {
+  .header__menu nav a {
+    margin-right: 15px;
+    display: inline-block;
+    font-size: 16px;
   }
 }
